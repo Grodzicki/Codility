@@ -3,6 +3,7 @@ import arrays.OddOccurrencesInArray;
 import countingElements.MaxCounters;
 import countingElements.MissingInteger;
 import iterations.BinaryGap;
+import prefixSums.GenomicRangeQuery;
 import timeComplexity.FrogJmp;
 import timeComplexity.PermMissingElem;
 import timeComplexity.TapeEquilibrium;
@@ -23,11 +24,17 @@ public class Main {
 //
 //        tapeEquilibriumTest();
 
-        maxCountersTest();
+//        maxCountersTest();
+//
+//        missingIntegerTest();
 
-        missingIntegerTest();
+        genomicRangeQueryTest();
 
 
+    }
+
+    public static void genomicRangeQueryTest(){
+        System.out.println(GenomicRangeQuery.solution("CAGCCTA", new int[]{2,5,0}, new int[]{4,5,6}));;
     }
 
     public static void binaryGapTest(){
