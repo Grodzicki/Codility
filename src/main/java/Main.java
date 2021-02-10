@@ -4,14 +4,26 @@ import countingElements.MaxCounters;
 import countingElements.MissingInteger;
 import iterations.BinaryGap;
 import prefixSums.GenomicRangeQuery;
-import timeComplexity.FrogJmp;
 import timeComplexity.PermMissingElem;
 import timeComplexity.TapeEquilibrium;
+
+import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
         System.out.println("Start");
+
+        String s = "He is a very very good boy, isn't he?";
+
+        String[] split = s.split("'|\\?|\\!|,\\s+|\\s+");
+
+        Scanner scan = new Scanner(System.in);
+        long l = Long.parseUnsignedLong("453435");
+        for (String s1 : split) {
+            System.out.println(s1);
+        }
 
 ////        binaryGapTest();
 //        cyclicRotationTest();
@@ -28,7 +40,7 @@ public class Main {
 //
 //        missingIntegerTest();
 
-        genomicRangeQueryTest();
+//        genomicRangeQueryTest();
 
 
     }
